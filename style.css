@@ -10,17 +10,17 @@
 
 /*navbar*/
 .topnav {
-    background-color: rgb(37, 32, 79);
-    font-family: "nobel", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: left;
+    font-family: "cooper-black-std", serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
     padding: 1em;
 
 }
 
 .topnav a {
-    color: rgb(246, 184, 213);
+    color: rgb(21, 63, 55);
     text-decoration: none;
 
 }
@@ -38,7 +38,14 @@
 ul {
     list-style-type: none;
 }
-
+li {
+    display: inline;
+    padding: 4px;
+}
+body{
+    background-image: url(assets/watercolorbackground.png);
+    background-size: auto;
+}
 /*heroimage*/
 .hero-image {
     width: 100%;
@@ -50,22 +57,58 @@ h1 {
     font-weight: 400;
     font-style: italic;
     text-align: center;
+    color: rgb(21, 63, 55);
     padding: 1em;
+    font-size: 4em;
 }
 h2{
     font-family: "cooper-black-std", serif;
     font-weight: 400;
     font-style: italic;
-    text-align: left;
+    text-align: center;
+    color: rgb(21, 63, 55);
     padding: 1em;  
+    font-size: 3em;
 }
 h3{
     font-family: "cooper-black-std", serif;
     font-weight: 400;
     font-style: italic;
     text-align: left;
+    color: rgb(21, 63, 55);
     padding: 1em;   
 }
+p{
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: rgb(21, 63, 55);
+    padding: 1em;   
+}
+.columns {
+    columns: 2 300px;
+    column-gap: 2em;
+    margin-bottom: 1.25rem;
+  }
+  dd {
+    text-indent: 1rem;
+    line-height: 1.75rem;
+    padding: 1em;
+    font-family: axia, sans-serif;
+    color: rgb(21, 63, 55);
+  }
+
+/*Not sure if I'm going to use this
+.textbox {
+    background-color: rgba(142, 159, 141, 1);
+    border-radius: 30px;
+    position: relative;
+    width: 50vh;
+    height: 60vh;
+    padding: 20px;
+}
+    */
 
 /*threephotogrid*/
 .threephotogrid-container {
@@ -84,8 +127,6 @@ h3{
     text-align: center;
     width: 100%;
     margin: 0 auto;
-
-
 }
 
 .grid-figuretwo {
@@ -93,7 +134,7 @@ h3{
     grid-row: 2/3;
     width: 100%;
     margin: 0 auto;
-    padding-right: 5em;
+    padding-right: 0em;
 }
 
 .grid-figurethree {
@@ -101,5 +142,28 @@ h3{
     grid-row: 3/2;
     width: 100%;
     margin: 0 auto;
-    padding-left: 5em;
+    padding-left: 0em;
 }
+.teaching-grid-figureone {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.teaching-grid-figuretwo {
+    grid-column: 2/3;
+    grid-row: 3/2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+footer {
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(21, 63, 55);
+    padding: 1rem;
+    max-width: 35rem;
+  }
