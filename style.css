@@ -10,10 +10,10 @@
 
 /*navbar*/
 .topnav {
-    font-family: "cooper-black-std", serif;
-    font-weight: 600;
+    font-family: "logic-monospace", mono;
+    font-weight: 500;
+    font-style: normal;
     font-size: 1.5em;
-    font-style: italic;
     text-align: center;
     padding: 1em;
 
@@ -38,14 +38,18 @@
 ul {
     list-style-type: none;
 }
+
 li {
     display: inline;
-    padding: 4px;
+    padding: 1em;
 }
-body{
+
+
+/* body {
     background-image: url(assets/watercolorbackground.png);
     background-size: auto;
-}
+} */
+
 /*heroimage*/
 .hero-image {
     width: 100%;
@@ -53,51 +57,58 @@ body{
 
 /*headings*/
 h1 {
-    font-family: "cooper-black-std", serif;
-    font-weight: 400;
-    font-style: italic;
+    font-family: "logic-monoscript", mono;
+    font-weight: 800;
+    font-style: normal;
     text-align: center;
     color: rgb(21, 63, 55);
-    padding: 1em;
     font-size: 4em;
 }
-h2{
-    font-family: "cooper-black-std", serif;
-    font-weight: 400;
-    font-style: italic;
+
+h2 {
+    font-family: "logic-monoscript", mono;
+    font-weight: 800;
+    font-style: normal;
     text-align: center;
     color: rgb(21, 63, 55);
-    padding: 1em;  
     font-size: 3em;
+    padding: 1 em;
 }
-h3{
-    font-family: "cooper-black-std", serif;
-    font-weight: 400;
-    font-style: italic;
+
+h3 {
+    font-family: "logic-monoscript", mono;
+    font-weight: 800;
+    font-style: normal;
     text-align: left;
     color: rgb(21, 63, 55);
-    padding: 1em;   
+    padding: 1em;
+
 }
-p{
-    font-family: "cooper-black-std", serif;
-    font-weight: 400;
-    font-style: italic;
+
+p {
+    font-family: "logic-monospace", mono;
+    font-weight: 500;
+    font-style: normal;
     text-align: center;
     color: rgb(21, 63, 55);
-    padding: 1em;   
+    padding: 4em;
 }
+
 .columns {
     columns: 2 300px;
     column-gap: 2em;
     margin-bottom: 1.25rem;
-  }
-  dd {
-    text-indent: 1rem;
+}
+
+dd {
+    text-indent: 4rem;
     line-height: 1.75rem;
-    padding: 1em;
-    font-family: axia, sans-serif;
+    padding: .5 em;
+      font-family: "logic-monospace", mono;
+    font-weight: 500;
+    font-style: normal;
     color: rgb(21, 63, 55);
-  }
+}
 
 /*Not sure if I'm going to use this
 .textbox {
@@ -112,7 +123,7 @@ p{
 
 /*threephotogrid*/
 .threephotogrid-container {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
@@ -144,6 +155,7 @@ p{
     margin: 0 auto;
     padding-left: 0em;
 }
+
 .teaching-grid-figureone {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -159,11 +171,15 @@ p{
     margin: 0 auto;
     padding: 1em;
 }
+
 footer {
-    font-family: "cooper-black-std", serif;
-    font-weight: 400;
-    font-style: italic;
+    font-family: "logic-monospace", mono;
+    font-weight: 500;
+    font-style: normal;
     color: rgb(21, 63, 55);
     padding: 1rem;
     max-width: 35rem;
-  }
+}
+.footerimage {
+    width: 100%;
+}
