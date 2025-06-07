@@ -4,15 +4,24 @@
     box-sizing: border-box;
 }
 
-.system-font-stack {
-    font-family: Arial, Helvetica, sans-serif;
+html {
+    font-family: "logic-monospace", monospace;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.75rem;
+}
+
+/*mediaqueries*/
+@media screen and (min-width: 42rem) {
+    .columns {
+        columns: 2;
+
+    }
+
 }
 
 /*navbar*/
 .topnav {
-    font-family: "logic-monospace", mono;
-    font-weight: 500;
-    font-style: normal;
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
@@ -23,10 +32,14 @@
     color: rgb(21, 63, 55);
     text-decoration: none;
 }
-.topnav a:visited{
-    color: rgb(46, 99, 78);  
+
+.topnav a:visited {
+    color: rgb(46, 99, 78);
 }
 
+.topnav a:focus {
+    background-color: blue;
+}
 
 .topnav a:hover {
     background-color: #ddd;
@@ -50,43 +63,31 @@
 
 
 /*headings*/
-h1 {
-    font-family: "logic-monoscript", mono;
+h1,
+h2 {
+    font-family: "logic-monoscript", monospace;
     font-weight: 800;
     font-style: normal;
     text-align: center;
+    line-height: 3rem;
     color: rgb(21, 63, 55);
     font-size: 4em;
 }
 
-h2 {
-    font-family: "logic-monoscript", mono;
-    font-weight: 800;
-    font-style: normal;
-    text-align: center;
-    color: rgb(21, 63, 55);
-    font-size: 3em;
-    padding: 1em;
-}
-
 h3 {
-    font-family: "logic-monoscript", mono;
+    font-family: "logic-monoscript", monospace;
     font-weight: 800;
     font-style: normal;
-    text-align: left;
+    line-height: 3rem;
     color: rgb(21, 63, 55);
-    padding: 1em;
-
+    font-size: 2em;
+    padding: 2rem;
 }
+
 
 p {
     margin-left: auto;
     margin-right: auto;
-    font-family: "logic-monospace", monospace;
-    font-weight: 500;
-    font-style: normal;
-
-    color: rgb(21, 63, 55);
     padding: 4em;
 }
 
@@ -94,8 +95,7 @@ p {
     columns: 2 300px;
     column-gap: 2em;
     margin-bottom: 1.25rem;
-    padding:3rem;
-    /*use column gap in combination with the container will give the illusion of padding */
+    padding: 4rem;
 }
 
 li {
@@ -158,23 +158,21 @@ li {
     margin: 0 auto;
     padding: 1em;
 }
-
+/*footer*/
 footer {
-    font-family: "logic-monospace", mono;
-    font-weight: 500;
-    font-style: normal;
-    color: rgb(21, 63, 55);
     padding: 1rem;
     max-width: 35rem;
 }
-.footerimage {
-    width: 100%;
+
+.footergridcontainer {
+    display: grid;
+    grid-template-columns: auto;
 }
-/*mediaqueries*/
-@media screen and (min-width: 43rem) {
-    .columns{
-       columns: 2;
 
-   }
+.footeritem1 {
+    grid-row: 1/2;
+}
 
+.footeritem2 {
+    grid-row: 2/1;
 }
