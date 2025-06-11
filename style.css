@@ -81,17 +81,19 @@ h3 {
     font-family: "logic-monoscript", monospace;
     font-weight: 800;
     font-style: normal;
+    text-align: left;
     line-height: 3rem;
     color: rgb(21, 63, 55);
     font-size: 1.5em;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
 p {
     margin-left: auto;
     margin-right: auto;
-    padding: 4em;
+    max-width: 75ch;
+    padding: 2em;
 }
 
 .columns {
@@ -112,7 +114,7 @@ li {
 }
 /*imagecontainer*/
 .imagecontainer{
-    width: 50%;
+    width: 30%;
     max-width: 50rem;
     margin: 0 auto;
     text-align: center; 
@@ -181,9 +183,31 @@ li {
     margin: 0 auto;
     padding: 1em;
 }
+/*mailchimpsignup*/
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    text-indent: 4rem;
+    line-height: 1.75rem;
+    padding: .5em;
+    font-family: "logic-monospace", mono;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(21, 63, 55);
+    width: 600px;
+ 
+}
+.button{
+    font-family: "logic-monospace", mono;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(124, 151, 106);
+    padding: .5rem;
+}
+
 /*footer*/
 footer {
-    padding: 1rem;
+    padding: 3rem;
     max-width: 35rem;
 }
 
@@ -202,3 +226,4 @@ footer {
     grid-row: 2/1;
     padding-left: 1rem;
 }
+
