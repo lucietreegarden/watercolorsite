@@ -217,7 +217,7 @@ li {
 
 .button:focus {
     background-color: rgb(135, 156, 144);
-    color: rgb(73, 96, 44);
+    color: rgb(7, 6, 6);
 }
 
 .button:hover {
