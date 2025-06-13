@@ -5,10 +5,12 @@
 }
 
 html {
-    font-family: "logic-monospace", monospace, 'Courier New', Courier, monospace; 
+    font-family: "logic-monospace", monospace, 'Courier New', Courier, monospace;
     font-weight: 500;
     font-style: normal;
     line-height: 1.75rem;
+    max-width: 50rem;
+    margin: auto;
 }
 
 /*navbar*/
@@ -39,7 +41,7 @@ html {
 }
 
 .topnav a:active {
-    background-color: #a1cdc1;
+    background-color: rgb(21, 63, 55);
     color: white;
 }
 
@@ -52,7 +54,8 @@ html {
     display: inline;
     padding: 1em;
 }
-.astyle{
+
+.astyle {
     color: rgb(21, 63, 55);
 
 }
@@ -65,7 +68,7 @@ h1 {
     text-align: center;
     line-height: 3rem;
     color: rgb(21, 63, 55);
-    font-size: 1.5em;
+    font-size: 2em;
 }
 h2 {
     font-family: "logic-monoscript", monospace;
@@ -74,7 +77,7 @@ h2 {
     text-align: center;
     line-height: 3rem;
     color: rgb(21, 63, 55);
-    font-size: 2em; 
+    font-size: 1.5em;
 }
 
 h3 {
@@ -112,25 +115,27 @@ li {
     font-style: normal;
     color: rgb(21, 63, 55);
 }
+
 /*imagecontainer*/
-.imagecontainer{
+.imagecontainer {
     width: 30%;
     max-width: 50rem;
     margin: 0 auto;
-    text-align: center; 
-   
+    text-align: center;
+
 }
 
 /*landingpageimagecontainer*/
-.landingpageimagecontainer{
+.landingpageimagecontainer {
     width: 100%;
     max-width: 50rem;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
-.landingpageimagecontainerelement{
+
+.landingpageimagecontainerelement {
     width: 100%;
-    text-align: center; 
-    margin: 0 auto;   
+    text-align: center;
+    margin: 0 auto;
 }
 
 /*threephotogrid*/
@@ -183,6 +188,7 @@ li {
     margin: 0 auto;
     padding: 1em;
 }
+
 /*mailchimpsignup*/
 #mc_embed_signup {
     background: #fff;
@@ -195,19 +201,39 @@ li {
     font-style: normal;
     color: rgb(21, 63, 55);
     width: 600px;
- 
+
 }
-.button{
+
+.button {
     font-family: "logic-monospace", mono;
     font-weight: 500;
     font-style: normal;
     background-color: rgb(124, 151, 106);
     padding: .5rem;
 }
+.button:visited {
+    background-color: rgb(46, 99, 78);
+}
+
+.button:focus {
+    background-color: rgb(135, 156, 144);
+    color: rgb(73, 96, 44);
+}
+
+.button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.button:active {
+    background-color: rgb(21, 63, 55);
+    color: white;
+}
+
 
 /*footer*/
 footer {
-    padding: 3rem;
+    padding: 4em;
     max-width: 35rem;
 }
 
@@ -226,4 +252,3 @@ footer {
     grid-row: 2/1;
     padding-left: 1rem;
 }
-
