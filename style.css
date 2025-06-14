@@ -12,15 +12,29 @@ html {
     max-width: 50rem;
     margin: auto;
 }
-
-/*navbar*/
-.topnav {
+.logo {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+  }
+  
+ /*navbar*/ 
+  nav {
     font-size: 1.5em;
     text-align: center;
     padding: .5em;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0; 
+    list-style-type: none; 
+  } 
+
+.astyle {
+    color: rgb(21, 63, 55);
 
 }
-
 .topnav a:link {
     color: rgb(21, 63, 55);
     text-decoration: none;
@@ -45,21 +59,9 @@ html {
     color: white;
 }
 
-
-.ulnav {
-    list-style-type: none;
-}
-
-.linav {
+.linav{
     display: inline;
-    padding: 1em;
 }
-
-.astyle {
-    color: rgb(21, 63, 55);
-
-}
-
 /*headings*/
 h1 {
     font-family: "logic-monoscript", monospace;
@@ -88,22 +90,21 @@ h3 {
     line-height: 3rem;
     color: rgb(21, 63, 55);
     font-size: 1.5em;
-    padding: 1rem;
+    
 }
-
 
 p {
     margin-left: auto;
     margin-right: auto;
     max-width: 75ch;
-    padding: 2em;
+    padding: 1rem;
 }
 
 .columns {
     columns: 2 300px;
     column-gap: 2em;
     margin-bottom: 1.25rem;
-    padding: 4rem;
+    padding: 1rem;
 }
 
 li {
@@ -203,13 +204,16 @@ li {
     width: 600px;
 
 }
-
+.mc-embedded-subscribe{
+    text-align: right;
+}
 .button {
     font-family: "logic-monospace", mono;
     font-weight: 500;
     font-style: normal;
     background-color: rgb(124, 151, 106);
     padding: .5rem;
+   
 }
 .button:visited {
     background-color: rgb(46, 99, 78);
@@ -229,26 +233,42 @@ li {
     background-color: rgb(21, 63, 55);
     color: white;
 }
+/*subscribe*/
 
+.subscribegridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    padding-bottom: 1rem;
 
+}
+
+.subscribeitem1 {
+    grid-row: 1/1;
+}
+
+.subscribeitem2 {
+    grid-row: 2/1;
+}
+
+.subscribeitem3 {
+    grid-row: 2/2;
+}
+
+.subscribeitem4 {
+    grid-row: 4/2;
+}
+@media (max-width: 700px) {
+    .subscribegridcontainer {
+      grid-template-areas:
+        'subscribeitem1'
+        'subscribeitem2'
+        'subscribeitem3'
+        'subscribeitem4';
+    }
+  }
 /*footer*/
 footer {
     padding: 4em;
-    max-width: 35rem;
+    max-width: 50rem;
 }
 
-.footergridcontainer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-}
-
-.footeritem1 {
-    grid-row: 1/2;
-    padding-right: 1rem;
-}
-
-.footeritem2 {
-    grid-row: 2/1;
-    padding-left: 1rem;
-}
